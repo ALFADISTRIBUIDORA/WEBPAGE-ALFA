@@ -812,7 +812,30 @@
       text-align: center;
     }
 
-    /* ======================= */
+.map-container {
+  /* Establece la posición relativa para que el iframe se posicione dentro de este div */
+  position: relative;
+  /* Ancho 100% para ocupar todo el espacio disponible */
+  width: 100%;
+  /* Usa padding-bottom para crear un espacio que mantiene la proporción del mapa. 
+  Calcula esto dividiendo la altura original (480) entre el ancho original (640) = 0.75 */
+ 
+  /* Oculta cualquier contenido que se desborde */
+  overflow: hidden;
+}
+
+.map-container iframe {
+  /* Posición absoluta para ocupar todo el contenedor */
+  position: absolute;
+  /* El iframe ocupa todo el espacio del contenedor */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ======================= */
     /* SECCIÓN CONTACTO */
     /* ======================= */
     .contact {
