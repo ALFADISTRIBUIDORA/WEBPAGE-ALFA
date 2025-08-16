@@ -14,18 +14,6 @@
 <link rel="icon" type="image/x-icon" href="/favicon_io/favicon.ico">
 </head>
 <body>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ALFA DISTRIBUIDORA</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-</head>
-<body>
-
 <header>
   <nav class="container">
     <!-- Logo a la izquierda -->
@@ -181,6 +169,7 @@
           <li>Monte Ralo</li>
           <li>Despeñaderos</li>          
           <li>Berrotarán</li>
+          <li>San Agustín</li>
         </ul>
       </div>
       <div class="zona-col">
@@ -220,12 +209,12 @@
 <section id="contacto" class="contact container">
   <div class="container">
     <h2>CONTACTATE CON NOSOTROS</h2>
-  <form 
-  id="contact-form" 
-  action="https://formspree.io/f/mgvzrqpw" 
-  method="POST"
-  enctype="multipart/form-data"
->
+    <form 
+      id="contact-form" 
+      action="https://formspree.io/f/mgvzrqpw" 
+      method="POST"
+      enctype="multipart/form-data"
+    >
       <input type="hidden" name="_captcha" value="false" />
       
       <div class="form-group">
@@ -233,12 +222,11 @@
         <input type="text" id="name" name="name" required placeholder="Ingresa tu nombre" />
       </div>
 
-        <div class="form-group">
-    <label for="phone">Número de celular (WhatsApp):</label>
-    <input type="tel" id="phone" name="phone" required placeholder="+54 9 351 1234567" pattern="^\+?\d{7,15}$" />
-  </div>
+      <div class="form-group">
+        <label for="phone">Número de celular (WhatsApp):</label>
+        <input type="tel" id="phone" name="phone" required placeholder="+54 9 351 1234567" pattern="^\+?\d{7,15}$" />
+      </div>
   
-      
       <div class="form-group">
         <label for="email">Correo electrónico:</label>
         <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com" />
@@ -248,9 +236,15 @@
         <label for="message">Tu mensaje:</label>
         <textarea id="message" name="message" rows="5" required placeholder="Escribe tu mensaje aquí..."></textarea>
       </div>
+
+      <!-- Botón de envío -->
+      <div class="form-group">
+        <button type="submit" class="btn-primary">Enviar</button>
+      </div>
     </form>
   </div>
 </section>
+
 
 <!-- Botón flotante WhatsApp -->
 <a href="https://wa.me/5493571541000" target="_blank" class="whatsapp-float" aria-label="WhatsApp Alfa Distribuidora">
